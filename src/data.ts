@@ -4,6 +4,7 @@ import type {
   Feature,
   Testimonial,
   Stat,
+  Problem,
 } from "./types";
 
 export const services: Service[] = [
@@ -190,5 +191,50 @@ export const stats: Stat[] = [
     id: "stat-4",
     value: "4.9/5",
     label: "Customer Rating",
+  },
+];
+
+export const problems: Problem[] = [
+  {
+    id: "problem-1",
+    title: "Can't Find Reliable Mechanics",
+    description:
+      "Struggling to find trustworthy technicians when your car breaks down, especially in unfamiliar areas.",
+    icon: "MagnifyingGlassIcon",
+  },
+  {
+    id: "problem-2",
+    title: "Long Wait Times",
+    description:
+      "Waiting hours for help to arrive, leaving you stranded on the road with no clear timeline.",
+    icon: "ClockIcon",
+  },
+  {
+    id: "problem-3",
+    title: "Price Uncertainty",
+    description:
+      "No idea what the service will cost until after it's done, leading to unexpected bills and overcharging.",
+    icon: "CurrencyDollarIcon",
+  },
+  {
+    id: "problem-4",
+    title: "Multiple Calls & Hassle",
+    description:
+      "Having to call multiple contacts, explain your situation repeatedly, and coordinate everything yourself.",
+    icon: "PhoneXMarkIcon",
+  },
+  {
+    id: "problem-5",
+    title: "Safety Concerns",
+    description:
+      "Worried about the legitimacy and qualifications of random mechanics you find on the street.",
+    icon: "ExclamationTriangleIcon",
+  },
+  {
+    id: "problem-6",
+    title: "No Transparency",
+    description:
+      "Can't track who's coming, when they'll arrive, or their location in real-time.",
+    icon: "EyeSlashIcon",
   },
 ];

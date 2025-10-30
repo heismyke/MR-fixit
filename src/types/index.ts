@@ -33,3 +33,10 @@ export interface Stat {
   value: string;
   label: string;
 }
+
+export interface Problem {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+}

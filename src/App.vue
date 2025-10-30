@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import NavBar from "./components/NavBar.vue";
 import HeroSection from "./components/HeroSection.vue";
+import ProblemsSection from "./components/ProblemsSection.vue";
 import ServicesSection from "./components/ServicesSection.vue";
 import HowItWorksSection from "./components/HowItWorksSection.vue";
 import FeaturesSection from "./components/FeaturesSection.vue";
@@ -14,6 +15,7 @@ import FooterSection from "./components/FooterSection.vue";
     <div class="min-h-screen bg-white">
         <NavBar />
         <HeroSection />
+        <ProblemsSection />
         <ServicesSection />
         <HowItWorksSection />
         <FeaturesSection />
