@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  # Development server
+  dev:
+    build:
+      context: .
+      target: development
+    container_name: mr-fixit-dev
+    ports:
+      - "5178:5178"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run dev -- --host 0.0.0.0
+
+  # Production server
+  prod:
+    build:
+      context: .
+      target: production
+    container_name: mr-fixit-prod
+    ports:
+      - "8080:80"
+    environment:
+      - NODE_ENV=production
